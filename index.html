@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savy’Com – Agence de Communication</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to bottom right, #121212, #1f1f1f);
+      color: #fffbd1;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 15px 0;
+      text-align: center;
+      z-index: 999;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+    nav a {
+      color: gold;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f7c900;
+    }
+    header {
+      background: #000000;
+      color: gold;
+      padding: 180px 20px 80px;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      animation: fadeInUp 1s ease-in-out;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      color: gold;
+      margin-bottom: 20px;
+      font-size: 2em;
+      border-bottom: 2px solid gold;
+      padding-bottom: 10px;
+    }
+    .intro, .services, .portfolio, .contact {
+      background: #1e1e1e;
+      padding: 40px;
+      border-radius: 15px;
+      margin-bottom: 50px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    }
+    .intro img {
+      display: block;
+      margin: 30px auto 0;
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(255,215,0,0.2);
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      font-size: 1.1em;
+    }
+    .services li img {
+      width: 50px;
+      margin-right: 20px;
+      filter: brightness(0) invert(1);
+    }
+    .services .extra-text {
+      margin-top: 40px;
+      font-size: 1.1em;
+      line-height: 1.7em;
+      color: #ffd;
+    }
+    .portfolio-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .portfolio-gallery img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+    .portfolio-gallery img:hover {
+      transform: scale(1.05);
+    }
+    .contact-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: gold;
+      color: black;
+      padding: 16px 32px;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+      transition: background 0.3s ease;
+    }
+    .contact-btn:hover {
+      background: #f7c900;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #111;
+      font-size: 0.95em;
+      color: #ccc;
+    }
+    footer a {
+      color: gold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#intro">Qui sommes-nous</a>
+    <a href="#services">Nos services</a>
+    <a href="#portfolio">Nos réalisations</a>
+    <a href="#contact">Contactez-nous</a>
+  </nav>
+
+  <header>
+    <img src="https://i.postimg.cc/fLKgPyTq/IMG-0802.jpg" alt="Logo SavyCom">
+    <h1>Savy’Com</h1>
+    <p>Votre partenaire créatif pour une communication qui cartonne</p>
+  </header>
+
+  <section id="intro" class="intro">
+    <h2>Qui sommes-nous ?</h2>
+    <p>Savy’Com est une agence de communication moderne qui allie créativité, stratégie et performance. Nous aidons les marques à se démarquer sur le web et les réseaux sociaux grâce à une identité forte et une communication de qualité. 
+    Nos solutions sont conçues pour booster votre visibilité, engager votre communauté et convertir vos prospects.</p>
+    <p>Notre équipe est composée de créatifs passionnés, de stratèges expérimentés et d’experts digitaux prêts à relever tous vos défis !</p>
+    <img src="https://i.postimg.cc/fLKgPyTq/IMG-0802.jpg" alt="Logo SavyCom">
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nos services</h2>
+    <ul>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/strategy-board.png" alt="Stratégie"> <strong>Stratégie marketing</strong> – Positionnement, ciblage, plan d’action</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/video-editing.png" alt="Contenu"> <strong>Création de contenu</strong> – Vidéos, visuels, rédaction</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/facebook-like.png" alt="Réseaux sociaux"> <strong>Réseaux sociaux</strong> – Animation, croissance, gestion</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="Publicité"> <strong>Publicité en ligne</strong> – Facebook & Google Ads</li>
+      <li><img src="https://img.icons8.com/ios-filled/50/000000/combo-chart.png" alt="Analytics"> <strong>Analyse & reporting</strong> – Suivi de performance et ajustement continu</li>
+    </ul>
+    <div class="extra-text">
+      <p>Une communication mal maîtrisée peut freiner la croissance d’une entreprise. C’est là que Savy’Com entre en jeu. Nous vous aidons à transmettre le bon message, au bon moment, au bon public.</p>
+      <p>Nous créons des stratégies percutantes qui captent l’attention, développent votre notoriété et fidélisent votre clientèle. Nos actions sont mesurées, nos résultats concrets. Avec Savy’Com, chaque mot, chaque visuel, chaque campagne a un but : booster votre business.</p>
+      <p>Confiez-nous votre image, nous la faisons rayonner.</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Nos réalisations</h2>
+    <div class="portfolio-gallery">
+      <img src="https://i.postimg.cc/xCTPcRng/Flyers-IM-PAREBRISE.png" alt="Flyer IM Pare-Brise 1">
+      <img src="https://i.postimg.cc/vTZSwy4Y/IMG-0803.jpg" alt="Flyer IM Pare-Brise 3">
+      <img src="https://i.postimg.cc/wxwGc1r7/IMG-0804.jpg" alt="Flyer IM Pare-Brise 4">
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <p>Nous sommes disponibles pour échanger sur vos projets et vous proposer des solutions personnalisées. Remplissez le formulaire ci-dessous :</p>
+    <form name="contact" method="POST" data-netlify="true" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto;">
+      <input type="hidden" name="form-name" value="contact">
+      <input type="text" name="Nom" placeholder="Votre nom" required style="padding: 12px; border-radius: 8px; border: none; font-family: 'Orbitron', sans-serif;">
+      <input type="email" name="Email" placeholder="Votre email" required style="padding: 12px; border-radius: 8px; border: none; font-family: 'Orbitron', sans-serif;">
+      <textarea name="Message" placeholder="Votre message" rows="5" required style="padding: 12px; border-radius: 8px; border: none; font-family: 'Orbitron', sans-serif;"></textarea>
+      <button type="submit" class="contact-btn">Envoyer le message</button>
+    </form>
+  </section>
+  
+
+  <footer>
+    &copy; 2025 Savy’Com – Tous droits réservés<br>
+    📧 <a href="mailto:savycom@outlook.fr">savycom@outlook.fr</a>
+  </footer>
+</body>
+</html>
+
