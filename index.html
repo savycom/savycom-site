@@ -3,141 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Savy’Com – Agence de Communication</title>
+  <title>Savy'Com</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(to bottom right, #121212, #1f1f1f);
+      background: linear-gradient(135deg, #000000 0%, #1e1e1e 100%);
+      font-family: 'Poppins', sans-serif;
       color: #fffbd1;
     }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      padding: 15px 0;
-      text-align: center;
-      z-index: 999;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
-    }
-    nav a {
-      color: gold;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #f7c900;
-    }
-    header {
-      background: #000000;
-      color: gold;
-      padding: 180px 20px 80px;
-      text-align: center;
-      animation: fadeInDown 1s ease-in-out;
-    }
-    @keyframes fadeInDown {
-      0% { opacity: 0; transform: translateY(-30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-      animation: fadeInUp 1s ease-in-out;
-    }
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
     h2 {
+      text-align: center;
       color: gold;
-      margin-bottom: 20px;
-      font-size: 2em;
-      border-bottom: 2px solid gold;
-      padding-bottom: 10px;
+      font-size: 2.2em;
+      margin-top: 60px;
+      text-shadow: 2px 2px 4px #000;
+      animation: fadeInDown 1s ease-out;
     }
-    .intro, .services, .portfolio, .contact {
-      background: #1e1e1e;
-      padding: 40px;
+    .contact {
+      background: #1a1a1a;
+      padding: 50px 20px;
+      margin: 50px auto;
       border-radius: 15px;
-      margin-bottom: 50px;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+      max-width: 900px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      animation: slideUp 1s ease-in-out;
     }
-    .intro img {
-      display: block;
-      margin: 30px auto 0;
-      width: 300px;
-      border-radius: 20px;
-      box-shadow: 0 4px 12px rgba(255,215,0,0.2);
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li {
-      margin-bottom: 20px;
+    .contact form {
       display: flex;
-      align-items: center;
-      font-size: 1.1em;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 30px;
     }
-    .services li img {
-      width: 50px;
-      margin-right: 20px;
-      filter: brightness(0) invert(1);
-    }
-    .services .extra-text {
-      margin-top: 40px;
-      font-size: 1.1em;
-      line-height: 1.7em;
-      color: #ffd;
-    }
-    .portfolio-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-    .portfolio-gallery img {
-      width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
-      transition: transform 0.3s ease;
-    }
-    .portfolio-gallery img:hover {
-      transform: scale(1.05);
+    .contact input,
+    .contact textarea {
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Poppins', sans-serif;
+      background-color: #2b2b2b;
+      color: #f1f1f1;
+      box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
     }
     .contact-btn {
-      display: inline-block;
-      margin-top: 30px;
       background: gold;
-      color: black;
-      padding: 16px 32px;
-      text-decoration: none;
-      border-radius: 10px;
+      border: none;
+      padding: 14px;
       font-weight: bold;
-      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.1em;
       transition: background 0.3s ease;
     }
     .contact-btn:hover {
-      background: #f7c900;
+      background: #ffd700;
     }
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: #111;
-      font-size: 0.95em;
-      color: #ccc;
+    .decor-icons {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
-    footer a {
+    .decor-icons i {
       color: gold;
-      text-decoration: none;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -202,17 +145,24 @@
     </p>
   </section>
 
+ <body>
   <section id="contact" class="contact">
-    <h2>Contactez-nous</h2>
-    <p>Nous sommes disponibles pour échanger sur vos projets et vous proposer des solutions personnalisées. Remplissez le formulaire ci-dessous :</p>
-    <form name="contact" method="POST" data-netlify="true" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: auto;">
+    <h2><i class="fas fa-paper-plane"></i> Contactez-nous</h2>
+    <div class="decor-icons">
+      <i class="fas fa-envelope"></i>
+      <i class="fas fa-comments"></i>
+      <i class="fas fa-lightbulb"></i>
+    </div>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto; font-size: 1.1em;">Nous sommes disponibles pour échanger sur vos projets et vous proposer des solutions personnalisées. Remplissez le formulaire ci-dessous pour nous contacter directement.</p>
+    <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact">
-      <input type="text" name="Nom" placeholder="Votre nom" required style="padding: 12px; border-radius: 8px; border: none; font-family: 'Orbitron', sans-serif;">
-      <input type="email" name="Email" placeholder="Votre email" required style="padding: 12px; border-radius: 8px; border: none; font-family: 'Orbitron', sans-serif;">
-      <textarea name="Message" placeholder="Votre message" rows="5" required style="padding: 12px; border-radius: 8px; border: none; font-family: 'Orbitron', sans-serif;"></textarea>
-      <button type="submit" class="contact-btn">Envoyer le message</button>
+      <input type="text" name="Nom" placeholder="Votre nom" required>
+      <input type="email" name="Email" placeholder="Votre email" required>
+      <textarea name="Message" placeholder="Votre message" rows="6" required></textarea>
+      <button type="submit" class="contact-btn"><i class="fas fa-paper-plane"></i> Envoyer</button>
     </form>
   </section>
+</body>
   
 
 
