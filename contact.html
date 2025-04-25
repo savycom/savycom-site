@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Savy’Com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: #000;
+      color: #FFD700;
+      text-align: center;
+      padding: 20px;
+    }
+    nav {
+      background: #111;
+      padding: 15px;
+    }
+    nav a {
+      color: #FFD700;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    h1 {
+      margin-top: 40px;
+    }
+    form {
+      max-width: 600px;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-family: 'Orbitron', sans-serif;
+      background: #222;
+      color: #FFD700;
+    }
+    button {
+      background: #FFD700;
+      color: #000;
+      font-weight: bold;
+      padding: 14px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e6c200;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: #111;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">Qui sommes-nous</a>
+    <a href="services.html">Nos services</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="fondateur.html">Fondateur</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Contactez-nous</h1>
+  <p>Nous sommes disponibles pour échanger sur vos projets et vous proposer des solutions personnalisées.</p>
+
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <input type="text" name="Nom" placeholder="Votre nom" required>
+    <input type="email" name="Email" placeholder="Votre email" required>
+    <textarea name="Message" placeholder="Votre message" rows="6" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+
+  <footer>
+    &copy; 2025 Savy’Com – Tous droits réservés<br>
+    📧 <a href="mailto:savycom@outlook.fr" style="color: #FFD700;">savycom@outlook.fr</a>
+  </footer>
+</body>
+</html>
