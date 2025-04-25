@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fondateur – Savy’Com</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Oxanium:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
+      font-family: 'Oxanium', sans-serif;
       background-color: #000;
       color: #FFD700;
       text-align: center;
@@ -17,6 +17,7 @@
     nav {
       background: #111;
       padding: 15px;
+      box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
     }
     nav a {
       color: #FFD700;
@@ -24,19 +25,35 @@
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-shadow: 0 0 8px #FFD700;
+    }
     h1 {
       margin-top: 40px;
+      text-shadow: 0 0 10px #FFD700;
     }
-    img {
+    .box {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #111;
+      padding: 30px;
+      border: 2px solid #FFD700;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+    }
+    .box img {
       width: 220px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(255,215,0,0.3);
-      margin-top: 30px;
+      box-shadow: 0 0 12px #FFD700;
+      margin-bottom: 20px;
     }
-    p {
-      max-width: 800px;
-      margin: 30px auto;
+    .box h3 {
+      margin-top: 10px;
+      text-shadow: 0 0 6px #FFD700;
+    }
+    .box p {
       line-height: 1.7em;
+      margin-top: 20px;
     }
     footer {
       margin-top: 60px;
@@ -44,6 +61,10 @@
       background-color: #111;
       font-size: 0.9em;
       color: #ccc;
+    }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -58,18 +79,21 @@
   </nav>
 
   <h1>Le Fondateur</h1>
-  <img src="https://i.postimg.cc/kXNkLHn5/IMG-0810.jpg" alt="Tom Redolfi">
-  <p>
-    Tom Redolfi incarne l’esprit ambitieux et engagé de Savy’Com. Rigoureux, passionné par le monde du digital et fort d’une vision stratégique précise, il a fondé l’agence avec un objectif clair : accompagner les entreprises dans leur transformation et leur rayonnement numérique.
-    <br><br>
-    Grâce à son expérience en marketing, sa capacité à fédérer une équipe et à anticiper les évolutions du marché, Tom insuffle une dynamique de performance et d’excellence dans chaque projet.
-    <br><br>
-    Porté par une éthique de travail irréprochable, il veille à ce que chaque action entreprise par Savy’Com contribue à la croissance durable de ses partenaires. Son leadership inspire la confiance et motive toute l’équipe à viser toujours plus haut.
-  </p>
+  <div class="box">
+    <img src="https://i.postimg.cc/kXNkLHn5/IMG-0810.jpg" alt="Tom Redolfi">
+    <h3>Tom Redolfi – Fondateur de Savy’Com</h3>
+    <p>
+      Tom Redolfi incarne l’esprit ambitieux et engagé de Savy’Com. Rigoureux, passionné par le monde du digital et fort d’une vision stratégique précise, il a fondé l’agence avec un objectif clair : accompagner les entreprises dans leur transformation et leur rayonnement numérique.
+      <br><br>
+      Grâce à son expérience en marketing, sa capacité à fédérer une équipe et à anticiper les évolutions du marché, Tom insuffle une dynamique de performance et d’excellence dans chaque projet.
+      <br><br>
+      Porté par une éthique de travail irréprochable, il veille à ce que chaque action entreprise par Savy’Com contribue à la croissance durable de ses partenaires. Son leadership inspire la confiance et motive toute l’équipe à viser toujours plus haut.
+    </p>
+  </div>
 
   <footer>
     &copy; 2025 Savy’Com – Tous droits réservés<br>
-    📧 <a href="mailto:savycom@outlook.fr" style="color: #FFD700;">savycom@outlook.fr</a>
+    📧 <a href="mailto:savycom@outlook.fr">savycom@outlook.fr</a>
   </footer>
 </body>
 </html>
