@@ -9,26 +9,27 @@
   <style>
     body {
       margin: 0;
-      background: linear-gradient(135deg, #000000 0%, #1e1e1e 100%);
+      background-color: #000;
       font-family: 'Poppins', sans-serif;
-      color: #fffbd1;
+      color: #FFD700;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     h2 {
       text-align: center;
-      color: gold;
+      color: #FFD700;
       font-size: 2.2em;
-      margin-top: 60px;
-      text-shadow: 2px 2px 4px #000;
-      animation: fadeInDown 1s ease-out;
+      margin-top: 40px;
     }
     .contact {
-      background: #1a1a1a;
-      padding: 50px 20px;
-      margin: 50px auto;
-      border-radius: 15px;
-      max-width: 900px;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-      animation: slideUp 1s ease-in-out;
+      background: #111;
+      padding: 40px 20px;
+      margin: 40px 0;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
     }
     .contact form {
       display: flex;
@@ -40,47 +41,41 @@
     .contact textarea {
       padding: 15px;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       font-family: 'Poppins', sans-serif;
-      background-color: #2b2b2b;
-      color: #f1f1f1;
-      box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
+      background-color: #222;
+      color: #FFD700;
     }
     .contact-btn {
-      background: gold;
+      background: #FFD700;
+      color: #000;
       border: none;
       padding: 14px;
       font-weight: bold;
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: pointer;
       font-size: 1.1em;
       transition: background 0.3s ease;
     }
     .contact-btn:hover {
-      background: #ffd700;
+      background: #e6c200;
     }
     .decor-icons {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      font-size: 2em;
-      margin-bottom: 20px;
+      display: none;
     }
-    .decor-icons i {
-      color: gold;
-      animation: pulse 2s infinite;
+    p {
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 1.1em;
     }
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 1.6em;
+      }
+      .contact {
+        padding: 30px 15px;
+      }
     }
   </style>
 </head>
@@ -145,21 +140,16 @@
     </p>
   </section>
 
- <body>
+<body>
   <section id="contact" class="contact">
-    <h2><i class="fas fa-paper-plane"></i> Contactez-nous</h2>
-    <div class="decor-icons">
-      <i class="fas fa-envelope"></i>
-      <i class="fas fa-comments"></i>
-      <i class="fas fa-lightbulb"></i>
-    </div>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto; font-size: 1.1em;">Nous sommes disponibles pour échanger sur vos projets et vous proposer des solutions personnalisées. Remplissez le formulaire ci-dessous pour nous contacter directement.</p>
+    <h2>Contactez-nous</h2>
+    <p>Nous sommes disponibles pour échanger sur vos projets et vous proposer des solutions personnalisées. Remplissez le formulaire ci-dessous pour nous contacter directement.</p>
     <form name="contact" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="contact">
       <input type="text" name="Nom" placeholder="Votre nom" required>
       <input type="email" name="Email" placeholder="Votre email" required>
       <textarea name="Message" placeholder="Votre message" rows="6" required></textarea>
-      <button type="submit" class="contact-btn"><i class="fas fa-paper-plane"></i> Envoyer</button>
+      <button type="submit" class="contact-btn">Envoyer</button>
     </form>
   </section>
 </body>
