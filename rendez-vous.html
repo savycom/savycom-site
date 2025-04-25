@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prendre rendez-vous – Savy’Com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Oxanium:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Oxanium', sans-serif;
+      background-color: #000;
+      color: #FFD700;
+      text-align: center;
+    }
+    nav {
+      background: #111;
+      padding: 15px;
+      box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #FFD700;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-shadow: 0 0 8px #FFD700;
+    }
+    h1 {
+      margin-top: 40px;
+      text-shadow: 0 0 10px #FFD700;
+    }
+    .intro {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #111;
+      padding: 30px;
+      border-radius: 15px;
+      border: 2px solid #FFD700;
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+      line-height: 1.6em;
+    }
+    .calendly-inline-widget {
+      min-width: 320px;
+      height: 800px;
+      margin-top: 40px;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 30px;
+      background-color: #111;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">Qui sommes-nous</a>
+    <a href="services.html">Nos services</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="fondateur.html">Fondateur</a>
+    <a href="contact.html">Contact</a>
+    <a href="rendez-vous.html">Rendez-vous</a>
+  </nav>
+
+  <h1>Prendre rendez-vous</h1>
+  <div class="intro">
+    Vous souhaitez discuter de votre projet, poser une question ou planifier une rencontre ? Sélectionnez un créneau dans le calendrier ci-dessous. Nous vous recontacterons rapidement par email pour valider le rendez-vous.
+  </div>
+
+  <div class="calendly-inline-widget" data-url="https://calendly.com/savycom"></div>
+
+  <footer>
+    &copy; 2025 Savy’Com – Tous droits réservés<br>
+    📧 <a href="mailto:savycom@outlook.fr">savycom@outlook.fr</a>
+  </footer>
+</body>
+</html>
