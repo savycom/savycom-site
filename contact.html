@@ -3,102 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Savy’Com – Accueil</title>
+  <title>Contactez-nous – Savy’Com</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Oxanium:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Orbitron', sans-serif;
-      background-color: #000;
+      font-family: 'Oxanium', sans-serif;
+      background: #000;
       color: #FFD700;
       text-align: center;
+      padding: 20px;
     }
-    nav {
-      background: #111;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
-    }
-    nav a {
-      color: #FFD700;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    nav a:hover {
-      text-shadow: 0 0 8px #FFD700;
-    }
-    header {
-      padding: 80px 20px 60px;
-      background: linear-gradient(145deg, #111, #000);
-      box-shadow: inset 0 0 30px rgba(255, 215, 0, 0.1);
-    }
-    header img {
-      width: 220px;
-      max-width: 90%;
-      margin-bottom: 20px;
-      filter: drop-shadow(0 0 8px #FFD700);
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+    h1 {
+      margin-top: 40px;
       text-shadow: 0 0 10px #FFD700;
     }
-    header p {
-      font-size: 1.2em;
-    }
-    main p {
-      max-width: 700px;
+    form {
+      max-width: 600px;
       margin: 40px auto;
-      font-size: 1.2em;
-      line-height: 1.6em;
       background: #111;
       padding: 30px;
-      border: 2px solid #FFD700;
       border-radius: 15px;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+      border: 2px solid #FFD700;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
     }
-    footer {
-      margin-top: 60px;
-      padding: 30px;
-      background-color: #111;
-      font-size: 0.9em;
-      color: #ccc;
-    }
-    footer a {
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background-color: #222;
       color: #FFD700;
-      text-decoration: none;
+      font-family: 'Oxanium', sans-serif;
+    }
+    button {
+      background: #FFD700;
+      color: #000;
+      padding: 14px;
+      font-weight: bold;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #e6c200;
+    }
+    p.info {
+      max-width: 600px;
+      margin: 20px auto;
+      font-size: 1.1em;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Accueil</a>
-    <a href="a-propos.html">Qui sommes-nous</a>
-    <a href="services.html">Nos services</a>
-    <a href="realisations.html">Réalisations</a>
-    <a href="fondateur.html">Fondateur</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <h1>Contactez-nous</h1>
+  <p class="info">Remplissez le formulaire ci-dessous pour nous envoyer un message. Nous vous répondrons rapidement !</p>
 
-  <header>
-    <img src="https://i.postimg.cc/fLKgPyTq/IMG-0802.jpg" alt="Logo Savy’Com">
-    <h1>Savy’Com</h1>
-    <p>Votre agence de communication et marketing digital</p>
-  </header>
-
-  <main>
-    <p>Bienvenue sur le site officiel de Savy’Com. Naviguez via le menu pour découvrir notre univers !</p>
-  </main>
-
-  <footer>
-    &copy; 2025 Savy’Com – Tous droits réservés<br>
-    📧 <a href="mailto:savycom@outlook.fr">savycom@outlook.fr</a>
-  </footer>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <input type="text" name="Nom" placeholder="Votre nom" required>
+    <input type="email" name="Email" placeholder="Votre email" required>
+    <textarea name="Message" placeholder="Votre message" rows="6" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
 </body>
 </html>
+
 
